@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Triangles and Arrows</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/triangles.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Triangles</h1>
+  </header>
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Triangles</a></li>
+      <li><a href="arrows.html">Arrows</a></li>
+    </ul>
+    <br>
+  </div>
+  <main>
+    <p>To create triangles in CSS, the trick is to use a border around content that is an empty string or has no width and no height.</p>
+    <p>Then the borders on either side of the border to become a triangle must be made transparent in color.</p>
+    <p>That border with non-transparent color will angle to the virtual center of content and appear as a triangle. <em>Nice trick!</em></p>
+    <br>
+    <h3>
+      HTML
+    </h3>
+    <p><pre>&lt;div class="arrow-up"&gt;&lt;/div&gt;</pre></p>
+    <p><pre>&lt;div class="arrow-down"&gt;&lt;/div&gt;</pre></p>
+    <p><pre>&lt;div class="arrow-left"&gt;&lt;/div&gt;</pre></p>
+    <p><pre>&lt;div class="arrow-right"&gt;&lt;/div&gt;</pre></p>
+    <br>
+
+    <div class="css-code">
+    <h3>
+      CSS
+    </h3>
+    <p><pre>.arrow-up {</pre></p>
+    <p><pre>    width: 0;</pre></p>
+    <p><pre>    height: 0;</pre></p>
+    <p><pre>    border-left: 10px solid transparent;</pre></p>
+    <p><pre>    border-right: 10px solid transparent;</pre></p>
+    <p><pre id="blue-border">    border-bottom: 10px solid <em>blue</em>;</pre></p>   
+    <p><pre>}</pre></p>
+    </div>
+
+    <h3 class="caption" id="blue">
+      arrow-up
+    </h3>
+    <div class="arrow-up">
+    </div>
+    <br>
+
+    <div class="css-code">
+    <p><pre>.arrow-down {</pre></p>
+    <p><pre>    width: 0;</pre></p>
+    <p><pre>    height: 0;</pre></p>
+    <p><pre>    border-left: 100px solid transparent;</pre></p>
+    <p><pre>    border-right: 100px solid transparent;</pre></p>
+    <p><pre id="red-border">    border-top: 100px solid <em>red</em>;</pre></p>   
+    <p><pre>}</pre></p>
+    </div>
+
+    <h3 class="caption" id="red">
+      arrow-down
+    </h3>
+    <div class="arrow-down">
+    </div>
+    <br>
+
+    <div class="css-code">
+    <p><pre>.arrow-left {</pre></p>
+    <p><pre>    width: 0;</pre></p>
+    <p><pre>    height: 0;</pre></p>
+    <p><pre>    border-top: 40px solid transparent;</pre></p>
+    <p><pre>    border-bottom: 40px solid transparent;</pre></p>
+    <p><pre id="green-border">    border-right: 40px solid <em>green</em>;</pre></p>   
+    <p><pre>}</pre></p>
+    </div>
+
+    <h3 class="caption" id="green">
+      arrow-left
+    </h3>
+    <div class="arrow-left">
+    </div>
+    <br>
+
+    <div class="css-code">
+    <p><pre>.arrow-right {</pre></p>
+    <p><pre>    width: 0;</pre></p>
+    <p><pre>    height: 0;</pre></p>
+    <p><pre>    border-top: 70px solid transparent;</pre></p>
+    <p><pre>    border-bottom: 70px solid transparent;</pre></p>
+    <p><pre id="yellow-border">    border-left: 70px solid <em>yellow</em>;</pre></p>   
+    <p><pre>}</pre></p>
+    </div>
+
+    <h3 class="caption" id="yellow">
+      arrow-right
+    </h3>
+    <div class="arrow-right">
+    </div>
+    <br>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>

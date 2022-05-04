@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Triangles and Arrows</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/arrows.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Arrows</h1>
+  </header>
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="triangles.html">Triangles</a></li>
+      <li><a href="#">Arrows</a></li>
+    </ul>
+    <br>
+  </div>
+  <main>
+    <p>The triangles created with CSS border tricks can be placed at the end of other objects to create arrows or pointer-shaped structures.</p>
+    <p>One of the most common uses is shaping the navigation tree of a website. Also known as breadcrumb navigation.</p>
+    <p>An example of this use is shown above.</p>
+    <p>The code used to create these navigation arrows is shown below.</p>
+    <br>
+    <h3>
+      HTML
+    </h3>
+    <p><pre>&lt;div class="breadcrumbs"&gt;</pre></p>
+    <p><pre>    &lt;ul&gt;</pre></p>
+    <p><pre>        &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;</pre></p>
+    <p><pre>        &lt;li&gt;&lt;a href="triangles.html"&gt;Triangles&lt;/a&gt;&lt;/li&gt;</pre></p>
+    <p><pre>        &lt;li&gt;&lt;a href="#"&gt;Arrows&lt;/a&gt;&lt;/li&gt;</pre></p>
+    <p><pre>    &lt;/ul&gt;</pre></p>
+    <p><pre>    &lt;br&gt;</pre></p>
+    <p><pre>&lt;/div&gt;</pre></p>
+    <br>
+
+    <div class="css-code">
+    <h3>
+      CSS
+    </h3>
+    <p><pre>.breadcrumbs {</pre></p>
+    <p><pre>    margin: 0 24px;</pre></p>
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs li {</pre></p>
+    <span><pre>    float: left;    </pre></span><span class="comment">/* avoids any extra spaces compared to display: inline-block */</span>
+    <p><pre>    list-style: none;</pre></p>   
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a {</pre></p>
+    <p><pre>    color: antiquewhite;</pre></p>
+    <p><pre>    background: saddlebrown;</pre></p>
+    <p><pre>    font-weight: bold;</pre></p>
+    <p><pre>    text-decoration: none;</pre></p>
+    <span><pre>    position: relative;    </pre></span><span class="comment">/* enables offsets into the margin to take place */</span><br>
+    <span><pre>    display: block;    </pre></span><span class="comment">/* combined with height, enables setting the height correctly */</span><br>
+    <span><pre>    height: 24px;    </pre></span><span class="comment">/* combined with block display, sets height of breadcrumbs */</span>
+    <p><pre>    line-height: 24px;</pre></p>
+    <span><pre>    margin-right: 24px;    </pre></span><span class="comment">/* creates the space for the arrows head and tail */</span>
+    <p><pre>    padding: 0 8px;</pre></p>
+    <p><pre>}</pre></p>
+    <span><pre>.breadcrumbs a::before,    </pre></span><span class="comment">/* pseudo elements that create the arrows head and tail */</span>
+    <p><pre>.breadcrumbs a::after {</pre></p>
+    <span><pre>    content: "";    </pre></span><span class="comment">/* the borders surround no content which enables the arrows to come to a point */</span><br>
+    <span><pre>    position: absolute;    </pre></span><span class="comment">/* so the flow doesn't make space and it can fit in the margins */</span>
+    <p><pre>    border-color: saddlebrown;</pre></p>
+    <p><pre>    border-style: solid;</pre></p>
+    <span><pre>    border-width: 12px 8px;    </pre></span><span class="comment">/* creates the triangle-shape for arrows */</span>
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a::before {</pre></p>
+    <span><pre>    left: -16px;    </pre></span><span class="comment">/* moves the tail in place in the margin */</span><br>
+    <span><pre>    border-left-color: transparent;    </pre></span><span class="comment">/* creates the tail shape */</span>
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a::after{</pre></p>
+    <span><pre>    left: 100%;    </pre></span><span class="comment">/* enables head to be placed in the margin */</span>
+    <p><pre>    border-color: transparent;</pre></p>   
+    <span><pre>    border-left-color: saddlebrown;    </pre></span><span class="comment">/* creates the head shape */</span>
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a:hover{</pre></p>
+    <p><pre>    background-color: orangered;</pre></p> 
+    <p><pre>    text-shadow: 1px 1px 1px saddlebrown;</pre></p> 
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a:hover::after {</pre></p>
+    <p><pre>    border-left-color: orangered;</pre></p> 
+    <p><pre>}</pre></p>
+    <p><pre>.breadcrumbs a:hover::before {</pre></p>
+    <p><pre>    border-color: orangered;</pre></p>
+    <p><pre>    border-left-color: transparent;</pre></p>
+    <p><pre>}</pre></p>
+    </div>
+
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>

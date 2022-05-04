@@ -1,0 +1,112 @@
+h1 {
+	color: darkblue;
+	text-shadow: 1px 1px 1px antiquewhite;
+}
+
+h3 {
+	color: ghostwhite;
+	text-shadow: 1px 1px 1px saddlebrown;
+}
+
+pre {
+	font-size: large;
+	font-weight: bold;
+}
+
+.css-code {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+br {
+	clear: left;
+}
+
+.caption {
+	display: inline-block;
+	margin: 20px;
+	vertical-align: middle;
+}
+
+#blue-border em {
+	color: blue;
+	font-style: normal;
+}
+
+#blue {
+	color: blue;
+}
+
+.arrow-up {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid blue;
+	margin: 20px;
+	vertical-align: bottom;
+}
+
+#red-border em {
+	color: red;
+	text-shadow: 1px 1px 0 saddlebrown;
+	font-style: normal;
+}
+
+#red {
+	color: red;
+}
+
+.arrow-down {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 100px solid red;
+	margin: 20px;
+	vertical-align: bottom;
+}
+
+#green-border em {
+	color: green;
+	font-style: normal;
+}
+
+#green {
+	color: green;
+}
+
+.arrow-left {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-right: 40px solid green;
+	margin: 20px;
+	vertical-align: bottom;
+}
+
+#yellow-border em {
+	color: yellow;
+	text-shadow: 1px 1px 0 saddlebrown;
+	font-style: normal;
+}
+
+#yellow {
+	color: yellow;
+}
+
+.arrow-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 70px solid transparent;
+	border-bottom: 70px solid transparent;
+	border-left: 70px solid yellow;
+	margin: 20px;
+	vertical-align: bottom;
+}

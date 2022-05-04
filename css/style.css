@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: tan;
+	font-family: Tahoma;
+}
+
+header {
+	background-color: skyblue;
+	color: white;
+	text-align: center;
+	padding: 1em;
+}
+
+h1 {
+	letter-spacing: 2px;
+	word-spacing: 0.3em;
+	text-shadow: 1px 1px 1px saddlebrown;
+}
+
+.breadcrumbs {
+	margin: 0 24px;
+	/* text-align: left; */
+}
+
+.breadcrumbs li {
+	float: left;  /* avoids any extra spaces compared to display: inline-block */
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: antiquewhite;
+	background: saddlebrown;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;  /* enables offsets into the margin to take place */
+	display: block;  /* combined with height, enables setting the height correctly */
+	height: 24px;  /* combined with block display, sets height of breadcrumbs */
+	line-height: 24px;
+	/* text-align: center; */
+	margin-right: 24px;  /* creates the space for the arrows head and tail */
+	padding: 0 8px;
+}
+
+.breadcrumbs a::before,
+.breadcrumbs a::after {
+	content: "";  /* the borders surround 0 content which enables the arrows to come to a point */
+	position: absolute;  /* so it doesn't make space and it can fit in the margins */
+	border-color: saddlebrown;
+	border-style: solid;
+	border-width: 12px 8px;  /* creates the triangle-shape for arrows */
+}
+
+.breadcrumbs a::before {
+	left: -16px;  /* moves the tail in  place */
+	border-left-color: transparent;  /* creates the tail shape */
+}
+
+.breadcrumbs a::after {
+	left: 100%;  /* enables head to start in margin */ 
+	border-color: transparent;
+	border-left-color: saddlebrown;  /* creates the head shape */
+}
+
+.breadcrumbs a:hover {
+	background-color: orangered;
+	text-shadow: 1px 1px 1px saddlebrown;
+}
+
+.breadcrumbs a:hover::after {
+	border-left-color: orangered;
+}
+
+.breadcrumbs a:hover::before {
+	border-color: orangered;
+	border-left-color: transparent;
+}
+
+main {
+	margin: 24px;
+	line-height: 24px;
+}
+
+.home {
+	height: 646px;
+}
+
+footer {
+	background-color: skyblue;
+	height: 2em;
+}
