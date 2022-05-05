@@ -13,11 +13,10 @@ pre {
 	font-weight: bold;
 }
 
-span pre {
-	display: inline;
-}
-
 .comment {
 	color: darkslategray;
-	text-shadow: 1px 1px 0 slategray;
+	text-shadow: 1px 1px 1px slategray;
+	font-family: Tahoma;
+	font-weight: normal;
+	font-size: initial;
 }
