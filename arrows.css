@@ -1,0 +1,22 @@
+h1 {
+	color: darkblue;
+	text-shadow: 1px 1px 1px antiquewhite;
+}
+
+h3 {
+	color: ghostwhite;
+	text-shadow: 1px 1px 1px saddlebrown;
+}
+
+pre {
+	font-size: large;
+	font-weight: bold;
+}
+
+.comment {
+	color: darkslategray;
+	text-shadow: 1px 1px 1px slategray;
+	font-family: Tahoma;
+	font-weight: normal;
+	font-size: initial;
+}
