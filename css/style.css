@@ -1,3 +1,4 @@
+/* Universal */
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +9,7 @@ body {
 	font-family: Tahoma;
 }
 
+/* Header */
 header {
 	background-color: skyblue;
 	color: white;
@@ -21,6 +23,7 @@ h1 {
 	text-shadow: 1px 1px 1px saddlebrown;
 }
 
+/* Breadcrumb Navigation */
 .breadcrumbs {
 	margin: 0 24px;
 	/* text-align: left; */
@@ -79,6 +82,7 @@ h1 {
 	border-left-color: transparent;
 }
 
+/* Instructional Text */
 main {
 	margin: 24px;
 	line-height: 24px;
@@ -88,6 +92,7 @@ main {
 	height: 646px;
 }
 
+/* Footer  */
 footer {
 	background-color: skyblue;
 	height: 2em;

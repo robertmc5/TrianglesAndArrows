@@ -1,13 +1,16 @@
+/* Header */
 h1 {
 	color: darkblue;
 	text-shadow: 1px 1px 1px antiquewhite;
 }
 
+/* Sample Code Language SubHeaders */
 h3 {
 	color: ghostwhite;
 	text-shadow: 1px 1px 1px saddlebrown;
 }
 
+/* Sample Code */
 pre {
 	font-size: large;
 	font-weight: bold;
@@ -23,15 +26,34 @@ br {
 	clear: left;
 }
 
+/* Specially Colored Sample Code */
+#blue-border em {
+	color: blue;
+	font-style: normal;
+}
+
+#red-border em {
+	color: red;
+	text-shadow: 1px 1px 0 saddlebrown;
+	font-style: normal;
+}
+
+#green-border em {
+	color: green;
+	font-style: normal;
+}
+
+#yellow-border em {
+	color: yellow;
+	text-shadow: 1px 1px 0 saddlebrown;
+	font-style: normal;
+}
+
+/* Captions and Images */
 .caption {
 	display: inline-block;
 	margin: 20px;
 	vertical-align: middle;
-}
-
-#blue-border em {
-	color: blue;
-	font-style: normal;
 }
 
 #blue {
@@ -49,12 +71,6 @@ br {
 	vertical-align: bottom;
 }
 
-#red-border em {
-	color: red;
-	text-shadow: 1px 1px 0 saddlebrown;
-	font-style: normal;
-}
-
 #red {
 	color: red;
 }
@@ -70,11 +86,6 @@ br {
 	vertical-align: bottom;
 }
 
-#green-border em {
-	color: green;
-	font-style: normal;
-}
-
 #green {
 	color: green;
 }
@@ -88,12 +99,6 @@ br {
 	border-right: 40px solid green;
 	margin: 20px;
 	vertical-align: bottom;
-}
-
-#yellow-border em {
-	color: yellow;
-	text-shadow: 1px 1px 0 saddlebrown;
-	font-style: normal;
 }
 
 #yellow {

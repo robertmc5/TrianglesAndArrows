@@ -1,18 +1,22 @@
+/* Header */
 h1 {
 	color: darkblue;
 	text-shadow: 1px 1px 1px antiquewhite;
 }
 
+/* Sample Code Language SubHeaders */
 h3 {
 	color: ghostwhite;
 	text-shadow: 1px 1px 1px saddlebrown;
 }
 
+/* Sample Code */
 pre {
 	font-size: large;
 	font-weight: bold;
 }
 
+/* Sample Code Comments */
 .comment {
 	color: darkslategray;
 	text-shadow: 1px 1px 1px slategray;
